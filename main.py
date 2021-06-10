@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get('/ticket')
-def main(price:int, unit:int, protect:int, payment_method:chr):
+def main(price:int, unit:int, protect:int, payment_method:str):
 
     amount = price*unit
     tic_prot = amount*0.07
