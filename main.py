@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/bmi')
+@app.get('/ticket')
 def main(price:int, unit:int, protect:int, payment_method:chr):
 
     amount = price*unit
