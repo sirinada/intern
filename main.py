@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get('/bmi')
-def main(price:int, unit:int, payment_method:chr, protect:int):
+def main(price:int, unit:int, protect:int, payment_method:chr):
 
     amount = price*unit
     tic_prot = amount*0.07
